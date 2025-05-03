@@ -129,3 +129,33 @@ form p {
     padding: 15px 20px;
     display: block;
 }
+
+.container1 {
+    display: flex;
+}
+
+.sidebar1 {
+    width: 25%;
+    background-color: blue;
+    padding: 20px
+}
+
+.main-content1 {
+    width: 75%;
+    background-color: cadetblue;
+    padding: 20px;
+}
+
+.modelos1 {
+    width: 50%;
+    height: 50px;
+    background-color: brown;
+    border: 2px solid burlywood;
+    margin: 10px;
+    text-align: center;
+}
+
+.modelos1 a {
+    padding: 15px 20px;
+    display: block;
+}
