@@ -130,6 +130,24 @@ form p {
     display: block;
 }
 
+.nav_ul--li a {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    border: 3px solid blanchedalmond;
+    background-color: crimson;
+    transition: .5s;
+}
+
+.nav_ul--li a:hover {
+    box-shadow: 6px 3px 3px blueviolet;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    transition: .5s;
+    color: coral;
+    background-color: darkgoldenrod;
+}
+
 .container1 {
     display: flex;
 }
@@ -153,9 +171,28 @@ form p {
     border: 2px solid burlywood;
     margin: 10px;
     text-align: center;
+    flex-grow: 1;
 }
 
 .modelos1 a {
     padding: 15px 20px;
     display: block;
 }
+
+.caja1 {
+    width: 50%;
+    height: 50vh;
+    background-color: chocolate;
+    border: 2px solid blueviolet;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+}
+
