@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto BROT</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <img id="Logo" 
+    width="200" 
+    src="../assets/Logo BROT.jpeg" alt="Logo BROT">
+
+    <h1>Seccion de Contacto de BORT</h1>
+    <p>Puede comunicarse con nosotros completando el siguiente formulario</p>
+
+    <form action="/submit" method="post">
+        <p>Agregue su nombre</p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre">
+
+        <p>Escriba su mail</p>
+        <label for="mail">Mail:</label>
+        <input type="text" name="mail" id="mail">
+
+        <p>Dejenos sus consultas</p>
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje"></textarea>
+
+        <p>Seleccione su Pais</p>
+        <label for="pais">Pais:</label>
+        <select name="pais" id="pais">
+            <option value="">Uruguay</option>
+            <option value="">Argentina</option>
+            <option value="">Brasil</option>
+            <option value="">Otro</option>
+        </select>
+
+        <p>Envie el formulario</p>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <footer>
+        <p id="pie-de-pagina">Contamos con 2 sucursales. Sucrusal en el Centro y Sucursal en Pando</p>
+        <a id="modelos" 
+        href="../Index.html">Volver a menu de inicio</a>
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    color: blue;
+    font-size: 20px;
+    margin: 20px;
+}
+
+h1 {
+    color: brown;
+    text-align: center;
+}
+
+h2 {
+    color: firebrick;
+    text-align: center;
+}
+
+body{
+    background-color: darkgray;
+}
+
+div {
+    color: chartreuse;
+}
+
+span {
+    color: crimson;
+}
+
+div span {
+    color: chocolate;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.titulos {
+    color: gold;
+    margin-top: 20px;
+}
+
+#Placas {
+    text-align: center;
+}
+
+li {
+    color: khaki;
+    text-align: center;
+}
+
+.titulos-ayuda {
+    color: floralwhite;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.parrafo-ayuda {
+    color: darkgreen;
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img {
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
+
+#Logo {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: xx-large;
+    color: blueviolet;
+}
+
+#modelos {
+    margin-left: 30px;
+}
+
+#pie-de-pagina {
+    color: crimson;
+    font-size: medium;
+    text-align: right;
+}
+
+form {
+    margin-left: 50px;
+}
+
+form p {
+    color: darkcyan;
+    font-size: medium;
+}
+
+#parrafo-productos {
+    color: rgb(0, 18, 100);
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
