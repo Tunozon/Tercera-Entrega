@@ -115,6 +115,12 @@ form p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+#lista-productos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .navbar {
     background-color: aliceblue;
 }
@@ -240,11 +246,18 @@ form p {
     align-items: center;
 }
 
-.section1, .section2 {
+.section1, .section2, .section3 {
     border: 1px solid blue;
     width: 100%;
     height: 80px;
     font-size: xx-large;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#parrafo-inspirate {
+    color: aqua;
+    text-align: center;
 }
 
 #aside3 {
@@ -276,3 +289,82 @@ form p {
     }
 }
 
+#body4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 70px repeat(3, auto) 70px;
+    grid-template-areas: 
+    "header4 header4 header4 header4"
+    "nav4 main4 main4 aside4"
+    "nav4 main4 main4 aside4"
+    "nav4 main4 main4 aside4"
+    "footer4 footer4 footer4 footer4"
+    ;
+    gap: 10px;
+}
+
+.box {
+    border: 2px solid red;
+}
+
+#header4 {
+    background-color: aquamarine;
+    grid-area: header4;
+}
+
+#nav4 {
+    background-color: brown;
+    grid-area: nav4;
+}
+
+#main4 {
+    background-color: antiquewhite;
+    grid-area: main4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section4, .section5, .section6 {
+    border: 1px solid blue;
+    width: 100%;
+    height: 80px;
+    font-size: xx-large;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#parrafo-nosotros {
+    color: aqua;
+    text-align: center;
+}
+
+#aside4 {
+    background-color: burlywood;
+    grid-area: aside4;
+}
+
+#footer4 {
+    background-color: chartreuse;
+    grid-area: footer4;
+}
+
+@media screen and (max-width: 768px) {
+    #body4 {
+        grid-template-columns: 80px 1fr 60px;
+        grid-template-rows: 50px 80px repeat(2,1fr) 80px ;
+        grid-template-areas: 
+        "header4 header4 header4"
+        "nav4 nav4 nav4"
+        "main4 main4 aside4"
+        "main4 main4 aside4"
+        "footer4 footer4 footer4";
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #main4 {
+        min-height: 100vh;
+    }
+}
