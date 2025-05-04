@@ -49,6 +49,10 @@ div span {
     text-align: center;
 }
 
+#lista-placas {
+    list-style: none;
+}
+
 li {
     color: khaki;
     text-align: center;
@@ -68,12 +72,6 @@ li {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#img-index {
-    margin-top: 100px;
-    margin-left: 200px;
-    margin-bottom: 100px;
-}
-
 #Logotitulo {
     margin-top: 10px;
     margin-left: 10px;
@@ -83,9 +81,10 @@ li {
 }
 
 #Logo {
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
 #modelos {
@@ -168,7 +167,7 @@ form p {
 .sidebar1 {
     width: 15%;
     background-color: blue;
-    padding: 20px
+    padding: 20px;
 }
 
 .main-content1 {
@@ -199,6 +198,14 @@ form p {
     border: 2px solid blueviolet;
     margin: 10px;
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-index {
+    max-width: 100%;
+    height: auto;
 }
 
 .container2 {
