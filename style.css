@@ -32,7 +32,8 @@ div span {
 
 .titulos {
     color: darkblue;
-    margin-top: 20px;
+    margin: 0.5em 0;
+    text-align: center;
 }
 
 .titulos2 {
@@ -253,6 +254,9 @@ form p {
 
 #header3 {
     background-color: cornflowerblue;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
     grid-area: header3;
 }
 
@@ -309,6 +313,8 @@ form p {
 
 #aside3 {
     background-color: cornflowerblue;
+    width: 100%;
+    box-sizing: border-box;
     grid-area: aside3;
 }
 
@@ -319,14 +325,14 @@ form p {
 
 @media screen and (max-width: 768px) {
     #body3 {
-        grid-template-columns: 80px 1fr 60px;
-        grid-template-rows: 50px 80px repeat(2,1fr) 80px ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 80px auto fit-content (max-content) 80px;
         grid-template-areas: 
-        "header3 header3 header3"
-        "nav3 nav3 nav3"
-        "main3 main3 aside3"
-        "main3 main3 aside3"
-        "footer3 footer3 footer3";
+        "header3"
+        "nav3"
+        "main3"
+        "aside3"
+        "footer3";
     }
 }
 
@@ -356,6 +362,9 @@ form p {
 
 #header4 {
     background-color: cyan;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
     grid-area: header4;
 }
 
@@ -398,14 +407,14 @@ form p {
 
 @media screen and (max-width: 768px) {
     #body4 {
-        grid-template-columns: 80px 1fr 60px;
-        grid-template-rows: 50px 80px repeat(2,1fr) 80px ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px auto auto fit-content (max-content) 80px;
         grid-template-areas: 
-        "header4 header4 header4"
-        "nav4 nav4 nav4"
-        "main4 main4 aside4"
-        "main4 main4 aside4"
-        "footer4 footer4 footer4";
+        "header4"
+        "nav4"
+        "main4"
+        "aside4"
+        "footer4";
     }
 }
 
@@ -415,6 +424,11 @@ form p {
     }
 }
 
+.footer-container {
+    position: relative;
+    padding-bottom: 2em;
+}
+
 #inicio1 {
     display: inline-block;
     text-align: center;
@@ -422,6 +436,7 @@ form p {
     border: 3px solid cadetblue;
     background-color: dodgerblue;
     transition: .5s;
+    margin: 0.5em;
 }
 
 #inicio1:hover {
