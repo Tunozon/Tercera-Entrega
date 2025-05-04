@@ -12,25 +12,15 @@ p {
 }
 
 h1 {
-    color: brown;
     text-align: center;
 }
 
 h2 {
-    color: firebrick;
     text-align: center;
 }
 
 body{
     background-color: darkgrey;
-}
-
-div {
-    color: chartreuse;
-}
-
-span {
-    color: crimson;
 }
 
 div span {
@@ -106,8 +96,8 @@ form p {
     font-size: medium;
 }
 
-.parrafo-productos {
-    color: rgb(0, 18, 100);
+.parrafo-estilo1 {
+    color: dodgerblue;
     font-style: italic;
     font-size: 1.5em;
     font-weight: bold;
@@ -253,21 +243,21 @@ form p {
 }
 
 .box {
-    border: 2px solid red;
+    border: 2px solid blueviolet;
 }
 
 #header3 {
-    background-color: aquamarine;
+    background-color: cornflowerblue;
     grid-area: header3;
 }
 
 #nav3 {
-    background-color: brown;
+    background-color: darkcyan;
     grid-area: nav3;
 }
 
 #main3 {
-    background-color: antiquewhite;
+    background-color: darkcyan;
     grid-area: main3;
     display: flex;
     flex-direction: column;
@@ -277,6 +267,7 @@ form p {
 
 .section1, .section2, .section3 {
     border: 1px solid blue;
+    background-color: darkblue;
     width: 100%;
     min-height: 80px;
     margin: 20px 0;
@@ -308,12 +299,12 @@ form p {
 }
 
 #aside3 {
-    background-color: burlywood;
+    background-color: cornflowerblue;
     grid-area: aside3;
 }
 
 #footer3 {
-    background-color: chartreuse;
+    background-color: darkblue;
     grid-area: footer3;
 }
 
@@ -429,34 +420,34 @@ form p {
     display: inline-block;
     text-align: center;
     font-size: 20px;
-    border: 3px solid greenyellow;
-    background-color: azure;
+    border: 3px solid cadetblue;
+    background-color: dodgerblue;
     transition: .5s;
 }
 
 #inicio1:hover {
-    box-shadow: 6px 3px 3px rgb(43, 43, 226);
+    box-shadow: 6px 3px 3px blueviolet;
     margin-bottom: 3px;
     margin-left: 5px;
     transition: .5s;
-    color: rgb(3, 3, 3);
-    background-color: rgb(49, 184, 11);
+    color: antiquewhite;
+    background-color: darkblue;
 }
 
 #inicio2 {
     display: inline-block;
     text-align: center;
     font-size: 20px;
-    border: 3px solid rgb(255, 47, 47);
-    background-color: rgb(19, 198, 198);
+    border: 3px solid darkblue;
+    background-color: skyblue;
     transition: .5s;
 }
 
 #inicio2:hover {
-    box-shadow: 6px 3px 3px rgb(226, 43, 220);
+    box-shadow: 6px 3px 3px blueviolet;
     margin-bottom: 3px;
     margin-left: 5px;
     transition: .5s;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
+    color: black;
+    background-color: deepskyblue;
 }
