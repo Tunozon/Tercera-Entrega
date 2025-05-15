@@ -440,10 +440,10 @@ form p {
     grid-area: footer4;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
     #body4 {
         grid-template-columns: 1fr;
-        grid-template-rows: 50px auto auto fit-content (max-content) 80px;
+        grid-template-rows: 50px 80px auto fit-content (max-content) 80px;
         grid-template-areas: 
         "header4"
         "nav4"
@@ -453,33 +453,14 @@ form p {
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 700px) {
     #main4 {
         min-height: 100vh;
     }
 }
 
-@media screen and (max-width: 700px) {
-    #body3 {
-        grid-template-columns: 1fr;
-        grid-template-rows: 50px 80px auto fit-content (max-content) 80px;
-        grid-template-areas: 
-        "header3"
-        "nav3"
-        "main3"
-        "aside3"
-        "footer3";
-    }
-}
-
-@media screen and (min-width: 700px) {
-    #main3 {
-        min-height: 100vh;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    #header3 h1 {
+@media screen and (max-width: 450px) {
+    #header4 h1 {
         font-size: 1.2em;  
         padding: 0 0.5em;  
         word-wrap: break-word;  
@@ -488,28 +469,28 @@ form p {
 }
 
 @media screen and (max-width: 1350px) {
-    #body3 {
+    #body4 {
         grid-template-columns: 1fr;
         grid-template-rows: 50px 80px auto fit-content (max-content) 80px;
         grid-template-areas: 
-        "header3"
-        "nav3"
-        "main3"
-        "aside3"
-        "footer3";
+        "header4"
+        "nav4"
+        "main4"
+        "aside4"
+        "footer4";
     }
 }
 
 @media screen and (max-width: 500px) {
-    #body3 {
+    #body4 {
         grid-template-columns: 1fr;
         grid-template-rows: 50px 80px auto fit-content (max-content) 80px;
         grid-template-areas: 
-        "header3"
-        "nav3"
-        "main3"
-        "aside3"
-        "footer3";
+        "header4"
+        "nav4"
+        "main4"
+        "aside4"
+        "footer4";
     }
 }
 
