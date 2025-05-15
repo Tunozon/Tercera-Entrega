@@ -494,6 +494,26 @@ form p {
     }
 }
 
+@media screen and (max-width: 1300px) {
+    .container1 {
+        display: flex;
+    }
+    
+    .sidebar1 {
+        width: 0%;
+        background-color: darkblue;
+        padding: 20px;
+    }
+    
+    .main-content1 {
+        width: 100%;
+        background-color: cornflowerblue;
+        padding: 20px;
+    }
+}
+
+
+
 .footer-container {
     position: relative;
     padding-bottom: 2em;
