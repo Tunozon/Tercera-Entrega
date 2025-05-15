@@ -323,7 +323,7 @@ form p {
     grid-area: footer3;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
     #body3 {
         grid-template-columns: 1fr;
         grid-template-rows: 50px 80px auto fit-content (max-content) 80px;
@@ -336,11 +336,47 @@ form p {
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 700px) {
     #main3 {
         min-height: 100vh;
     }
 }
+
+@media screen and (max-width: 400px) {
+    #header3 h1 {
+        font-size: 1.2em;  
+        padding: 0 0.5em;  
+        word-wrap: break-word;  
+        overflow-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    #body3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 80px auto fit-content (max-content) 80px;
+        grid-template-areas: 
+        "header3"
+        "nav3"
+        "main3"
+        "aside3"
+        "footer3";
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #body3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 80px auto fit-content (max-content) 80px;
+        grid-template-areas: 
+        "header3"
+        "nav3"
+        "main3"
+        "aside3"
+        "footer3";
+    }
+}
+
 
 #body4 {
     display: grid;
