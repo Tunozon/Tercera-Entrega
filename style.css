@@ -233,19 +233,6 @@ form p {
     flex-direction: column;
 }
 
-.box {
-    border: 2px solid blueviolet;
-}
-
-.parrafo-lados2 {
-    color: deepskyblue;
-    font-style: italic;
-    font-size: 1.5em;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0.5em;
-}
-
 #body4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -258,6 +245,15 @@ form p {
     "footer4 footer4 footer4 footer4"
     ;
     gap: 10px;
+}
+
+.parrafo-lados2 {
+    color: deepskyblue;
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0.5em;
 }
 
 .box2 {
