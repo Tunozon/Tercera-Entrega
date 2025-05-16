@@ -7,59 +7,59 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <main class="container1">
-        <aside class="sidebar1">
-            <img id="Logo"
-             width="150" 
-             src="./assets/Logo BROT.jpeg" alt="Logo Brot"></aside>
-        <section class="main-content1">
-            <p id="Logotitulo">Revestimientos BROT</p>
-            <div>
-                <span>
-                    Revestimientos impermeables, anti-humedad, facil limpieza y facil instalacion. Lideres en calidad
-                </span>
-            </div>
-            <div class="modelos1">
-                <a id="modelos" href="#Placas">Modelos de Revestimientos</a>
-            </div>
-        </section>
-    </main>
-
-    <header>
-        <nav class="navbar">
-            <ul class="nav_ul">
-                <li class="nav_ul--li"><a href="pages/Productos.html">Productos</a></li>
-                <li class="nav_ul--li"><a href="pages/Contacto.html">Contacto</a></li>
-                <li class="nav_ul--li"><a href="pages/Inspirate.html">Inspirate</a></li>
-                <li class="nav_ul--li"><a href="pages/Nosotros.html">Nosotros</a></li>
-                <li class="nav_ul--li"><a href="pages/Ayuda.html">Ayuda</a></li>
+<body class="body-index">
+    <header class="header-index">
+        <img src="./assets/Logo BROT.jpeg" alt="Logo Brot" class="logo-Brot">
+        <nav class="nav-index" role="navigation" aria-label="menu principal">
+            <ul>
+                <li><a href="pages/productos.html">Productos</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+                <li><a href="pages/inspirate.html">Inspirate</a></li>
+                <li><a href="pages/nosotros.html">Nosotros</a></li>
+                <li><a href="pages/ayuda.html">Ayuda</a></li>
             </ul>
         </nav>
     </header>
 
-    <h1 class="titulos">Tercera entrega en codigo</h1>
+    <main class="hero-container">
+        <h1 class="hero-title">Revestimientos BROT</h1>
+        <p class="hero-tagline">Revestimientos impermeables, anti-humedad, facil limpieza y facil instalacion.</p>
+        <a href="#modelos" class="btn-primary">Familias de Revestimientos</a>
+    </main>
 
-    <p>Transforma tus espacion con una solucion inovadora que combina estetica y funcionalidad</p>
-
-    <h2 class="titulos">Revestimientos de Carbon de Bambu</h2>
-
-    <div class="container2">
-        <div class="caja1">
-            <img class="img-index"
-            src="./assets/Marmol Premium Zeus.jpeg" alt="Marmol Premium Zeus">
-            <div class="overlay-text">Marmol Premium Zeus</div>
+    <section id="modelos" class="container-modelos">
+        <h2 class="subtitulos-index">Revestimientos de Carbon de Bambu</h2>
+        <div class="grillas2">
+            <figure class="card-modelos">
+                <img src="./assets/Marmol Premium Zeus.jpeg" alt="Marmol Premium Zeus">
+                <figcaption>Marmol Premium Zeus</figcaption>
+            </figure>
+            <figure class="card-modelos">
+                <img src="./assets/Marmol Premium Hades.jpeg" alt="Marmol Premium Hades">
+                <figcaption>Marmol Premium Hades</figcaption>
+            </figure>
+            <figure class="card-modelos">
+                <img src="./assets/Marmol Nevada.jpeg" alt="Marmol Nevada">
+                <figcaption>Marmol Nevada</figcaption>
+            </figure>
+            <figure class="card-modelos">
+                <img src="./assets/Marmol Cordillera.jpeg" alt="Marmol Cordillera">
+                <figcaption>Marmol Cordillera</figcaption>
+            </figure>
+            <figure class="card-modelos">
+                <img src="./assets/Marmol Piedra Kota.jpeg" alt="Marmol Piedra Kota">
+                <figcaption>Marmol Piedra Kota</figcaption>
+            </figure>
+            <figure class="card-modelos">
+                <img src="./assets/Fabric Ciudad.jpeg" alt="Fabric Ciudad">
+                <figcaption>Fabric Ciudad</figcaption>
+            </figure>
         </div>
-        <div class="caja1">
-            <img class="img-index"
-            src="./assets/Marmol Premium Hades.jpeg" alt="Marmol Premium Hades">
-            <div class="overlay-text">Marmol Premium Hades</div>
-        </div>
-    </div>
+    </section>
 
-    <Section>
-        <p id="Placas">Diferentes modelos de Revestimientos</p>
-        <ul id="lista-placas">
+    <section class="container-features">
+        <h2 class="subtitulos-index">Diferentes Familias de Revestimientos</h2>
+        <ul class="features-list">
             <li>Madera</li>
             <li>Marmol</li>
             <li>Piedra</li>
@@ -68,10 +68,10 @@
             <li>Metal</li>
             <li>Espejo</li>
         </ul>
-    </Section>
+    </section>
 
-    <footer>
-        <p id="pie-de-pagina">Contamos con 2 sucursales. Sucrusal en el Centro y Sucursal en Pando</p>
+    <footer class="footer-index">
+        <p>Contamos con 2 sucursales: Centro y Pando</p>
     </footer>
 
 </body>
