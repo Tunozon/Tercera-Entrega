@@ -20,7 +20,6 @@ h2 {
 }
 
 body {
-    background-color: darkgrey;
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.5;
     font-size: clamp(1rem, 1.2vw, 1.125rem);
@@ -45,8 +44,9 @@ div span {
 }
 
 .titulos2 {
-    color: blueviolet;
+    color: #2c2c2c;
     margin-top: 20px;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
 }
 
 .subtitulos {
@@ -86,12 +86,6 @@ li {
     margin-left: 30px;
 }
 
-#pie-de-pagina {
-    color: aliceblue;
-    font-size: medium;
-    text-align: right;
-}
-
 form {
     margin-left: 50px;
 }
@@ -101,21 +95,11 @@ form p {
     font-size: medium;
 }
 
-.parrafo-estilo1 {
-    color: dodgerblue;
-    font-style: italic;
-    font-size: 1.5em;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0.5em;
-}
-
 .parrafo-estilo2 {
     color: azure;
-    font-style: italic;
-    font-size: 1.5em;
+    font-size: 20px;
     font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0.5em;
 }
 
@@ -248,23 +232,22 @@ form p {
     "footer4 footer4 footer4 footer4"
     ;
     gap: 10px;
+    background-color: #fff;
 }
 
 .parrafo-lados2 {
-    color: deepskyblue;
-    font-style: italic;
-    font-size: 1.5em;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
     font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0.5em;
 }
 
 .box2 {
-    border: 2px solid blue;
+    border-radius: 8px;
 }
 
 #header4 {
-    background-color: cyan;
     width: 100%;
     box-sizing: border-box;
     text-align: center;
@@ -272,7 +255,7 @@ form p {
 }
 
 #nav4 {
-    background-color: darkblue;
+    background-color: #2c2c2c;
     grid-area: nav4;
 }
 
@@ -286,26 +269,24 @@ form p {
 }
 
 .section4, .section5, .section6 {
-    border: 1px solid blueviolet;
     background-color: cadetblue;
     width: 100%;
     min-height: 80px;
     margin: 20px 0;
-    padding: 0.5em;
+    padding: 1.5em;
     box-sizing: border-box;
-    font-size: xx-large;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
     margin-top: 20px;
 }
 
 #aside4 {
-    background-color: darkblue;
+    background-color: #0066cc;
     grid-area: aside4;
 }
 
 #footer4 {
-    background-color: cornflowerblue;
     grid-area: footer4;
+    text-align: center;
 }
 
 @media screen and (max-width: 700px) {
@@ -371,18 +352,21 @@ form p {
     display: inline-block;
     text-align: center;
     font-size: 20px;
-    border: 3px solid darkblue;
-    background-color: skyblue;
-    transition: .5s;
+    transition: background-color 0.2s ease-in-out;
+    text-decoration: none;
+    color: white;
+    background-color: #2c2c2c;
+    padding: 10px 20px;
+    border-radius: 8px;
 }
 
 #inicio2:hover {
-    box-shadow: 6px 3px 3px blueviolet;
+    box-shadow: 6px 3px 3px #0066cc;
     margin-bottom: 3px;
     margin-left: 5px;
     transition: .5s;
     color: black;
-    background-color: deepskyblue;
+    background-color: #00aa88;
 }
 
 .body1 {
