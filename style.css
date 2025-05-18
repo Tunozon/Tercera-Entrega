@@ -46,8 +46,8 @@ div span {
 }
 
 .titulos2 {
-    color: #2c2c2c;
-    margin-top: 20px;
+    color: #fff;
+    margin-top: 10px;
     font-size: clamp(1.8rem, 5vw, 2.5rem);
 }
 
@@ -228,9 +228,9 @@ form p {
     grid-template-rows: 70px repeat(3, auto) 70px;
     grid-template-areas: 
     "header4 header4 header4 header4"
-    "nav4 main4 main4 aside4"
-    "nav4 main4 main4 aside4"
-    "nav4 main4 main4 aside4"
+    "nav4 main4 main4 main4"
+    "nav4 main4 main4 main4"
+    "nav4 main4 main4 main4"
     "footer4 footer4 footer4 footer4"
     ;
     gap: 10px;
@@ -248,6 +248,7 @@ form p {
 
 .box2 {
     border-radius: 8px;
+    background-color: #333;
 }
 
 #header4 {
@@ -300,7 +301,6 @@ form p {
         "header4"
         "nav4"
         "main4"
-        "aside4"
         "footer4";
     }
 }
@@ -328,7 +328,6 @@ form p {
         "header4"
         "nav4"
         "main4"
-        "aside4"
         "footer4";
     }
 }
@@ -341,7 +340,6 @@ form p {
         "header4"
         "nav4"
         "main4"
-        "aside4"
         "footer4";
     }
 }
@@ -358,7 +356,7 @@ form p {
     transition: background-color 0.2s ease-in-out;
     text-decoration: none;
     color: white;
-    background-color: #2c2c2c;
+    background-color: #333;
     padding: 10px 20px;
     border-radius: 8px;
 }
@@ -708,17 +706,17 @@ form p {
     }
 }
 
-header {
-    background: #0066cc;
-}
-
 .card {
     border: none;
     border-radius: 8px;
 }
 
 .text-primary {
-    color: #0066cc !important;
+    color: #333 !important;
+}
+
+#header-contacto {
+    background-color: #0066cc !important;
 }
 
 footer a {
