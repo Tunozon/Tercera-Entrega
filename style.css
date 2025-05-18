@@ -23,6 +23,8 @@ body {
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.5;
     font-size: clamp(1rem, 1.2vw, 1.125rem);
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 html, body {
@@ -705,3 +707,39 @@ form p {
         font-size: 18px;
     }
 }
+
+header {
+    background: #0066cc;
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+}
+
+.text-primary {
+    color: #0066cc !important;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+@media (max-width: 576px) {
+    header .display-5 {
+        font-size: 1.5rem;
+    }
+}
+
+.lead {
+    color: #fff;
+}
+
+.mb-4 {
+    color: #333;
+}
+
+.mb-0 {
+    color: #333;
+}
+
