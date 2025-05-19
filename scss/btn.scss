@@ -1,15 +1,14 @@
-#inicio2 {
-    display: inline-block;
+.Btn-inicio1 {
+        display: inline-block;
     text-align: center;
     font-size: $fontsize2;
     transition: background-color 0.2s ease-in-out;
     text-decoration: none;
     color: white;
-    background-color: $negrito;
+    background-color: $azulBrot;
     padding: 10px 20px;
     border-radius: $border-radius1;
     &:hover {
-            box-shadow: 6px 3px 3px $azulBrot;
             margin-bottom: 3px;
             margin-left: 5px;
             transition: .5s;
@@ -18,8 +17,8 @@
     }
 }
 
-#inicio3 {
-    text-decoration: none;
+.Btn-inicio2 {
+        text-decoration: none;
     color: white;
     background-color: $negrito;
     padding: 10px 20px;
@@ -28,4 +27,26 @@
     &:hover {
             background-color: $azulBrot;
     }
+}
+
+#inicio1 {
+    @extend .Btn-inicio1;
+    background-color: $azulBrot;
+    &:hover {
+        color: $blancosuave;
+        background-color: $negrito;
+    }
+}
+
+#inicio2 {
+    @extend .Btn-inicio1;
+    background-color: $negrito;
+    &:hover {
+        color: $blancosuave;
+        background-color: $azulBrot;
+    }
+}
+
+#inicio4 {
+    @extend .Btn-inicio2;
 }

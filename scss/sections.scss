@@ -1,0 +1,29 @@
+.section-gral {
+        background-color: #e8f5e9;
+        text-align: center;
+        padding: 40px 20px;
+        margin-bottom: 0;
+}
+
+.section1 {
+    @extend .section-gral;
+    .subtitulo-section1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+    }
+    .parrafo-section1 {
+        text-align: center;
+    }
+}
+
+.section2 {
+    @extend .section-gral;
+    background-color: #eae8f5;
+    .subtitulo-section2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+    }
+    .parrafo-section2 {
+        text-align: center;
+    }
+}

@@ -178,6 +178,11 @@ form p {
   background-color: #333;
 }
 
+.box3 {
+  border-radius: 8px;
+  background-color: #0066cc;
+}
+
 #header4 {
   width: 100%;
   box-sizing: border-box;
@@ -259,27 +264,6 @@ form p {
   padding-bottom: 2em;
 }
 
-#inicio2 {
-  display: inline-block;
-  text-align: center;
-  font-size: 20px;
-  transition: background-color 0.2s ease-in-out;
-  text-decoration: none;
-  color: white;
-  background-color: #333;
-  padding: 10px 20px;
-  border-radius: 8px;
-}
-
-#inicio2:hover {
-  box-shadow: 6px 3px 3px #0066cc;
-  margin-bottom: 3px;
-  margin-left: 5px;
-  transition: 0.5s;
-  color: black;
-  background-color: #00aa88;
-}
-
 .body1 {
   background-color: #f9f9f9;
 }
@@ -336,20 +320,6 @@ form p {
   padding: 15px;
 }
 
-.section1 {
-  background-color: #e8f5e9;
-  text-align: center;
-  padding: 40px 20px;
-  margin-bottom: 0;
-}
-.section1 .subtitulo-section1 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-.section1 .parrafo-section1 {
-  text-align: center;
-}
-
 .footer1 {
   text-align: center;
   padding: 20px;
@@ -363,35 +333,8 @@ form p {
   padding-top: 20px;
 }
 
-#inicio3 {
-  text-decoration: none;
-  color: white;
-  background-color: #333;
-  padding: 10px 20px;
-  border-radius: 8px;
-  transition: background-color 0.2s ease-in-out;
-}
-
-#inicio3:hover {
-  background-color: #0066cc;
-}
-
 .wrapper {
   min-height: calc(100vh - 60px);
-}
-
-.section2 {
-  background-color: #eae8f5;
-  text-align: center;
-  padding: 40px 20px;
-  margin-bottom: 0;
-}
-.section2 .subtitulo-section2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-.section2 .parrafo-section2 {
-  text-align: center;
 }
 
 .body-index {
@@ -616,6 +559,79 @@ footer a {
 
 .mb-0 {
   color: #333;
+}
+
+.Btn-inicio1, #inicio2, #inicio1 {
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+  transition: background-color 0.2s ease-in-out;
+  text-decoration: none;
+  color: white;
+  background-color: #0066cc;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.Btn-inicio1:hover, #inicio2:hover, #inicio1:hover {
+  margin-bottom: 3px;
+  margin-left: 5px;
+  transition: 0.5s;
+  color: black;
+  background-color: #00aa88;
+}
+
+.Btn-inicio2, #inicio4 {
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease-in-out;
+}
+.Btn-inicio2:hover, #inicio4:hover {
+  background-color: #0066cc;
+}
+
+#inicio1 {
+  background-color: #0066cc;
+}
+#inicio1:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+#inicio2 {
+  background-color: #333;
+}
+#inicio2:hover {
+  color: #fff;
+  background-color: #0066cc;
+}
+
+.section-gral, .section2, .section1 {
+  background-color: #e8f5e9;
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 0;
+}
+
+.section1 .subtitulo-section1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.section1 .parrafo-section1 {
+  text-align: center;
+}
+
+.section2 {
+  background-color: #eae8f5;
+}
+.section2 .subtitulo-section2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.section2 .parrafo-section2 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
