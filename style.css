@@ -283,8 +283,7 @@ form p {
 .body1 {
   background-color: #f9f9f9;
 }
-
-.body1 p {
+.body1 .parrafo-estilo1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
@@ -322,7 +321,6 @@ form p {
   text-align: center;
   transition: transform 0.2s ease-in-out;
 }
-
 .productos1:hover {
   transform: scale(1.03);
 }
@@ -338,19 +336,17 @@ form p {
   padding: 15px;
 }
 
-.proximamente {
+.section1 {
   background-color: #e8f5e9;
   text-align: center;
   padding: 40px 20px;
   margin-bottom: 0;
 }
-
-.proximamente h2 {
+.section1 .subtitulo-section1 {
   font-size: 1.5em;
   margin-bottom: 10px;
 }
-
-.proximamente p {
+.section1 .parrafo-section1 {
   text-align: center;
 }
 
@@ -384,19 +380,17 @@ form p {
   min-height: calc(100vh - 60px);
 }
 
-.recomendaciones {
+.section2 {
   background-color: #eae8f5;
   text-align: center;
   padding: 40px 20px;
   margin-bottom: 0;
 }
-
-.recomendaciones h2 {
+.section2 .subtitulo-section2 {
   font-size: 1.5em;
   margin-bottom: 10px;
 }
-
-.recomendaciones p {
+.section2 .parrafo-section2 {
   text-align: center;
 }
 
@@ -442,7 +436,6 @@ form p {
   border-radius: 4px;
   transition: background-color 0.3s;
 }
-
 .nav-index a:hover {
   background: #00aa88;
 }
@@ -451,13 +444,11 @@ form p {
   text-align: center;
   padding: calc(clamp(1rem, 2vw, 2rem) * 2) clamp(1rem, 2vw, 2rem);
 }
-
-.hero-title {
+.hero-container .hero-title {
   font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 0.5em;
 }
-
-.hero-tagline {
+.hero-container .hero-tagline {
   max-width: 600px;
   margin: 0 auto 1em;
   font-size: clamp(1rem, 2.5vw, 1.25rem);
@@ -472,7 +463,6 @@ form p {
   border-radius: 9999px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .btn-primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -495,9 +485,13 @@ form p {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s;
 }
-
 .card-modelos:hover {
   transform: translateY(-5px);
+}
+.card-modelos .nombre-producto {
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
 }
 
 .card-modelos img {
@@ -507,21 +501,18 @@ form p {
   object-fit: cover;
 }
 
-.card-modelos figcaption {
-  padding: 1rem;
-  text-align: center;
-  font-weight: bold;
+.container-features {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
-
-.features-list {
+.container-features .features-list {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
-
-.features-list li {
+.container-features .features-list .features {
   background: #00aa88;
   color: #fff;
   padding: 0.75em;
@@ -536,14 +527,8 @@ form p {
   color: #fff;
   font-size: 0.9rem;
 }
-
-.footer-index p {
+.footer-index .parrafo-footer-index {
   color: #fff;
-}
-
-.container-features {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 700px) {
@@ -554,16 +539,16 @@ form p {
   .nav-index {
     width: 100%;
   }
-  .logo-Brot {
-    display: none;
-  }
-  .nav-index ul {
+  .nav-index .nav-list {
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 0;
     margin: 0;
     gap: 1rem;
+  }
+  .logo-Brot {
+    display: none;
   }
 }
 @media screen and (max-width: 545px) {
@@ -583,15 +568,15 @@ form p {
   .nav-index {
     width: 100%;
   }
-  .nav-index ul {
+  .nav-index .nav-list {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .nav-index ul li {
+  .nav-index .nav-list .nav-list2 {
     margin-bottom: 1em;
   }
-  .nav-index ul li a {
+  .nav-index .nav-list .nav-list2 .nav-list-link {
     text-align: center;
     font-size: 18px;
   }

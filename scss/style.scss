@@ -320,13 +320,12 @@ form p {
 
 .body1 {
     background-color: $body-bg-color;
-}
-
-.body1 p {
-    font-family: $font-family1;
-    margin: 0;
-    padding: 0;
-    color: $negrito;
+    .parrafo-estilo1 {
+            font-family: $font-family1;
+            margin: 0;
+            padding: 0;
+            color: $negrito;
+    }
 }
 
 #header1 {
@@ -359,10 +358,9 @@ form p {
     overflow: hidden;
     text-align: center;
     transition: transform 0.2s ease-in-out;
-}
-
-.productos1:hover {
-    transform: scale(1.03);
+    &:hover {
+        transform: scale(1.03);
+    }
 }
 
 .productos1 img {
@@ -376,20 +374,18 @@ form p {
     padding: 15px;
 }
 
-.proximamente {
+.section1 {
     background-color: #e8f5e9;
     text-align: center;
     padding: 40px 20px;
     margin-bottom: 0;
-}
-
-.proximamente h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.proximamente p {
-    text-align: center;
+    .subtitulo-section1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+    }
+    .parrafo-section1 {
+        text-align: center;
+    }
 }
 
 .footer1 {
@@ -422,20 +418,18 @@ form p {
     min-height: calc(100vh - 60px);
 }
 
-.recomendaciones {
+.section2 {
     background-color: #eae8f5;
     text-align: center;
     padding: 40px 20px;
     margin-bottom: 0;
-}
-
-.recomendaciones h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.recomendaciones p {
-    text-align: center;
+    .subtitulo-section2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+    }
+    .parrafo-section2 {
+        text-align: center;
+    }
 }
 
 .body-index {
@@ -479,26 +473,23 @@ form p {
     padding: 0.5em 1em;
     border-radius: $border-radius2;
     transition: background-color 0.3s;
-}
-
-.nav-index a:hover {
-    background: $verdecito;
+    &:hover {
+        background: $verdecito;
+    }
 }
 
 .hero-container {
     text-align: center;
     padding: calc($padding1 * 2) $padding1;
-}
-
-.hero-title {
-    font-size: clamp(2rem, 5vw, 3rem);
-    margin-bottom: 0.5em;
-}
-
-.hero-tagline {
-    max-width: 600px;
-    margin: 0 auto 1em;
-    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    .hero-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 0.5em;
+    }
+    .hero-tagline {
+        max-width: 600px;
+        margin: 0 auto 1em;
+        font-size: clamp(1rem, 2.5vw, 1.25rem);
+    }
 }
 
 .btn-primary {
@@ -509,11 +500,10 @@ form p {
     padding: 0.75em 1.5em;
     border-radius: 9999px;
     transition: transform .3s, box-shadow .3s;
-}
-
-.btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
 }
 
 .grillas2 {
@@ -532,10 +522,14 @@ form p {
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     transition: transform .3s;
-}
-
-.card-modelos:hover {
-    transform: translateY(-5px);
+    &:hover {
+        transform: translateY(-5px);
+    }
+    .nombre-producto {
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+    }
 }
 
 .card-modelos img {
@@ -545,26 +539,23 @@ form p {
     object-fit: cover;
 }
 
-.card-modelos figcaption {
-    padding: 1rem;
-    text-align: center;
-    font-weight: bold;
+.container-features {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .features-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+            .features {
+                background: $verdecito;
+                color: $blancosuave;
+                padding: 0.75em;
+                border-radius: $border-radius2;
+                text-align: center;
+    }
 }
-
-.features-list {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.features-list li {
-    background: $verdecito;
-    color: $blancosuave;
-    padding: 0.75em;
-    border-radius: $border-radius2;
-    text-align: center;
 }
 
 .footer-index {
@@ -573,15 +564,9 @@ form p {
     background: $azulBrot;
     color: $blancosuave;
     font-size: 0.9rem;
-}
-
-.footer-index p {
-    color: $blancosuave;
-}
-
-.container-features {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    .parrafo-footer-index {
+        color: $blancosuave;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -592,19 +577,18 @@ form p {
     
     .nav-index {
         width: 100%;
+        .nav-list {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    gap: 1rem;
+        }
     }
     
     .logo-Brot {
         display: none;
-    }
-    
-    .nav-index ul {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        gap: 1rem;
     }
 }
 
@@ -627,20 +611,18 @@ form p {
     
     .nav-index {
         width: 100%;
-    }
-    .nav-index ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .nav-index ul li {
-        margin-bottom: 1em;
-    }
-    
-    .nav-index ul li a {
-        text-align: center;
-        font-size: $fontsize3;
+        .nav-list {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .nav-list2 {
+                        margin-bottom: 1em;
+                        .nav-list-link {
+                                    text-align: center;
+                                    font-size: $fontsize3;
+                        }
+                    }
+        }
     }
     
     .btn-primary {
