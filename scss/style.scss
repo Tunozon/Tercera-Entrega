@@ -225,17 +225,6 @@ form p {
     align-items: center;
 }
 
-.section4, .section5, .section6 {
-    background-color: #eae8f5;
-    width: 100%;
-    min-height: 80px;
-    margin: 20px 0;
-    padding: 1.5em;
-    box-sizing: $box-sizing;
-    margin-bottom: 1.5rem;
-    margin-top: 20px;
-}
-
 #aside4 {
     background-color: $azulBrot;
     grid-area: aside4;
@@ -570,3 +559,4 @@ footer a {
 @import "btn";
 
 @import "sections";
+
