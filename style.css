@@ -480,6 +480,9 @@ form p {
     gap: 1rem;
   }
   .logo-Brot {
+    padding-bottom: 30px;
+  }
+  .btn-primary {
     display: none;
   }
 }
@@ -487,9 +490,6 @@ form p {
   .header-index {
     flex-direction: column;
     align-items: center;
-  }
-  .logo-Brot {
-    display: none;
   }
   #modelos {
     font-size: 18px;

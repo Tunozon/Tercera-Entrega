@@ -479,6 +479,9 @@ form p {
     }
     
     .logo-Brot {
+        padding-bottom: 30px;
+    }
+        .btn-primary {
         display: none;
     }
 }
@@ -489,9 +492,6 @@ form p {
         align-items: center;
     }
     
-    .logo-Brot {
-        display: none;
-    }
     
     #modelos {
         font-size: $fontsize3;
@@ -520,6 +520,10 @@ form p {
         display: none;
     }
 }
+
+
+
+
 
 .card {
     border: none;
