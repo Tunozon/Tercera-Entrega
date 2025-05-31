@@ -1,0 +1,26 @@
+
+.card-modelos {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background: $blancosuave;
+    border-radius: $border-radius1;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform .3s;
+    &:hover {
+        transform: translateY(-5px);
+    }
+    .nombre-producto {
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+    }
+}
+
+.card-modelos img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    object-fit: cover;
+}

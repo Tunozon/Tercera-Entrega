@@ -1,0 +1,85 @@
+.section-gral {
+        text-align: center;
+        padding: 40px 20px;
+        margin-bottom: 0;
+}
+
+.section1 {
+    @extend .section-gral;
+    background-color: #e8f5e9;
+    .subtitulo-section1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+    }
+    .parrafo-section1 {
+        text-align: center;
+    }
+}
+
+.section2 {
+    @extend .section-gral;
+    background-color: #eae8f5;
+    .subtitulo-section2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+    }
+    .parrafo-section2 {
+        text-align: center;
+    }
+}
+
+@mixin section-extra ($color, $bg-color) {
+        text-align: center;
+        padding: 40px 20px;
+        margin-bottom: 0;
+        color: $color;
+        background-color: $bg-color;
+}
+
+.section7 {
+    @include section-extra($negrito, #eae8f5);
+    margin-top: 20px;
+        .subtitulo-section7 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+    }
+        .parrafo-section7 {
+            text-align: center;
+    }
+}
+
+.section8 {
+    @include section-extra($negrito, #e8f5e9);
+    margin-top: 20px;
+        .subtitulo-section8 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+    }
+        .parrafo-section8 {
+            text-align: center;
+    }
+}
+
+@mixin section-extra2($color, $bg-color) {
+    width: 100%;
+    min-height: 80px;
+    margin: 20px 0;
+    padding: 1.5em;
+    box-sizing: $box-sizing;
+    margin-bottom: 1.5rem;
+    margin-top: 20px;
+    color: $color;
+    background-color: $bg-color;
+}
+
+.section4 {
+    @include section-extra2($negrito, #eae8f5)
+}
+
+.section5 {
+    @include section-extra2($negrito, #eae8f5)
+}
+
+.section6 {
+    @include section-extra2($negrito, #eae8f5)
+}
