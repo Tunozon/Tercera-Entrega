@@ -1,0 +1,18 @@
+.container-features {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .features-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+            .features {
+                background: $verdecito;
+                color: $blancosuave;
+                padding: 0.75em;
+                border-radius: $border-radius2;
+                text-align: center;
+            }
+    }
+}
